@@ -1,0 +1,2 @@
+06:53:00 base: 0.97870  DecisionParams(exclusive=True, method='expected_f', threshold=0.02, singleton_boost=1.5)  P 0.9966 R 0.9478
+07:43:17 odds: 0.97872  DecisionParams(exclusive=False, method='expected_f', threshold=0.02, singleton_boost=1.5)  P 0.9968 R 0.9475

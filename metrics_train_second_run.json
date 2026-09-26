@@ -1,0 +1,56 @@
+{
+  "blocking": {
+    "pair_recall": 0.9728245508037388,
+    "entity_full_recall": 0.9163221464656403,
+    "pairs_per_s1": 31.547851411600668,
+    "total_pairs": 69620461,
+    "oracle_f05[all]": 0.9908781250086677,
+    "oracle_f05[India]": 0.9858402888454955,
+    "pair_recall[India]": 0.9601871730020135,
+    "pairs_per_s1[India]": 31.362335086074538,
+    "oracle_f05[US]": 0.9942395978982692,
+    "pair_recall[US]": 0.9812701566138592,
+    "pairs_per_s1[US]": 31.671636322152743
+  },
+  "rules": {
+    "decision": {
+      "exclusive": true,
+      "method": "threshold",
+      "threshold": 0.85,
+      "singleton_boost": 1.0
+    },
+    "f05": 0.8518712262399537,
+    "f05_singleton": 0.9286230090793285,
+    "f05_nonsingleton": 0.8473312257506,
+    "precision_micro": 0.9778604315088711,
+    "recall_micro": 0.7264184154593293
+  },
+  "lgbm_stage1": {
+    "decision": {
+      "exclusive": true,
+      "method": "threshold",
+      "threshold": 0.725,
+      "singleton_boost": 1.0
+    },
+    "f05": 0.9753846521720085,
+    "f05_singleton": 0.9643399027968227,
+    "f05_nonsingleton": 0.9760379681695409,
+    "precision_micro": 0.9949259112148244,
+    "recall_micro": 0.9444388949729425
+  },
+  "lgbm_stage2": {
+    "decision": {
+      "exclusive": true,
+      "method": "expected_f",
+      "threshold": 0.05,
+      "singleton_boost": 1.5
+    },
+    "f05": 0.9786965727908677,
+    "f05_singleton": 0.9802672681687993,
+    "f05_nonsingleton": 0.9786036634469972,
+    "precision_micro": 0.9966431293385678,
+    "recall_micro": 0.9478233889058719,
+    "f05[India]": 0.9739823870610612,
+    "f05[US]": 0.9818420914250621
+  }
+}

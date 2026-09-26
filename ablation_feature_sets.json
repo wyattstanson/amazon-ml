@@ -1,0 +1,32 @@
+{
+  "base": {
+    "threshold": 0.7,
+    "exclusive": true,
+    "method": "threshold",
+    "f05": 0.9694673419516434,
+    "f05_singleton": 0.9619322914114938,
+    "f05_nonsingleton": 0.9699101227464859,
+    "precision_micro": 0.9913070178888018,
+    "recall_micro": 0.9312971759103875
+  },
+  "base+support": {
+    "threshold": 0.725,
+    "exclusive": true,
+    "method": "threshold",
+    "f05": 0.9715841864372913,
+    "f05_singleton": 0.9602175297633629,
+    "f05_nonsingleton": 0.9722521232016125,
+    "precision_micro": 0.994106483411198,
+    "recall_micro": 0.9354477521020128
+  },
+  "base+support+stage2": {
+    "threshold": 0.05,
+    "exclusive": true,
+    "method": "expected_f",
+    "f05": 0.9759077075199425,
+    "f05_singleton": 0.9781735338787908,
+    "f05_nonsingleton": 0.975774561180605,
+    "precision_micro": 0.9961970918055758,
+    "recall_micro": 0.9404621637703157
+  }
+}

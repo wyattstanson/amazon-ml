@@ -1,0 +1,6 @@
+{
+  "exclusive": true,
+  "method": "expected_f",
+  "threshold": 0.05,
+  "singleton_boost": 1.5
+}
