@@ -1,0 +1,7 @@
+# Pinned runtime environment. Wheels exist for CPython 3.10 - 3.13 on Linux, macOS and Windows.
+# Nothing downloads models or data at runtime; the pipeline makes no network calls.
+numpy==2.2.6          # BSD-3-Clause
+scipy==1.15.3         # BSD-3-Clause
+rapidfuzz==3.13.0     # MIT
+lightgbm==4.6.0       # MIT  (the only learned models: two gradient-boosted tree ensembles, 2 models x 600 trees x (127 leaves + 126 splits) = 303,600 parameters)
+pytest==8.3.5         # MIT  (unit tests only)
